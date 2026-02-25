@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="../jquery-3.7.1.js"></script>
+    <script>
+        window.addEventListener("load",function(){
+            // let allps =document.getElementsByTagName("p")
+            // document.getElementsByTagName("button")[0].addEventListener("click",function(){
+            //     for (var i =0 ;i<allps.length;i++){
+            //         allps[i].style.display = "none";
+            //     }
+            // });
+            // document.getElementsByTagName("button")[1].addEventListener("click",function(){
+            //     for(var i=0;i<allps.length;i++){
+            //         allps[i].style.display = "block";
+            //     }
+            // });
+            $("input:first").click(function() {$("p").hide(2000);})
+            $("input:last").click(function(){$("p").show(2000);})
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="Hide">
+    <input type="button" value="Show">
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    
+</body>
+</html>

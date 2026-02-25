@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="../jquery-3.7.1.js"></script>
+    <script>
+        $(function(){
+            // console.log($("p"));
+            $("p").css("border","2px black solid ")
+            $("[class]").css("border","3px yellow solid") // any one  has classes
+            $("p[class]").css("border","3px red solid") // any one  has classes
+            $("p.iti").css("border","2px green dotted") /// class =iti
+            $("p[class ^=iti]").css("border","2px blue dashed") /// started with iti
+            $("p[class $=iti]").css("border","2px orange dashed") /// end with iti
+            $("p[class *=iti]").css("border","2px red dashed") /// all classes contains
+            $("li:nth-child(1)").css("background-color","green") ///first listItem in all lists
+            $("li:first").css("background-color","yellow")      ///first listItem in all lists
+            $("li:last").css("background-color","red")    ///last listItem in all lists
+            $("ul:first li:last").css("background-color","blue")   ///first list Last listItem in all lists
+            $("ul:last li:last").css("background-color","gray")   ///last list Last listItem in all lists
+            $("ul:eq(0) li:first").css("background-color","orange")   ///first list First listItem in all lists
+            $("ul:eq(1) li:first").css("color","white")   ///second list First listItem in all lists
+            $("ul:first li:gt(0)").css("color","wheat") /// first list and listItem grater than the first one order (0)
+
+        })
+    </script>
+</head>
+<body>
+    <p class="iti">JQuery</p>
+    <p class="mansouraiti">JQuery</p>
+    <p class="itimansouraiti">JQuery</p>
+    <p>JQuery</p>
+    <ul>
+        <li>Li-1</li>
+        <li>Li-2</li>
+        <li>Li-3</li>
+        <li>Li-4</li>
+    </ul>
+    <input type="text"><br>
+    <input type="password"><br>
+    <input type="text"><br>
+    <select>
+        <option>OptionOne</option>
+        <option>OptionTwo</option>
+        <option>OptiontThree</option>
+        <option>OptionFour</option>
+    </select><br>
+    <textarea></textarea><br>
+    <input type="radio"><br>
+    <input type="checkbox"><br>
+        <ul>
+        <li>Li-1</li>
+        <li>Li-2</li>
+        <li>Li-3</li>
+        <li>Li-4</li>
+    </ul>
+
+</body>
+</html>
